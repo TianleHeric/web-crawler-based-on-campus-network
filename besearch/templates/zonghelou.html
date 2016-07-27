@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+<p>Use this area to provide additional information.</p>
+
+
+    <table width="459" height="473" border="1">
+  <caption style="font-size: 20px">
+    第{{ weekInfor}}周星期{{dayInfor}}{{ building }}空教室统计
+  </caption>
+  <tbody>
+    <tr>
+      <td>第1~2节</td>
+      <td>{{tb[0]}}</td>
+    </tr>
+    <tr>
+      <td>第3~4节</td>
+      <td>{{ tb[1] }}</td>
+    </tr>
+    <tr>
+      <td>第5~6节</td>
+      <td>{{ tb[2] }}</td>
+    </tr>
+    <tr>
+      <td>第7~8节</td>
+      <td>{{ tb[3] }}</td>
+    </tr>
+    <tr>
+      <td>第9~11节</td>
+      <td>{{ tb[4] }}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+{#    #}
+{#<form method="post">#}
+{#<p>{{form.building.label}}{{form.building}}</p>#}
+{#<p>{{form.weekTime.label}}{{form.weekTime}}</p>#}
+{#<p>{{form.dayTime.label}}{{form.dayTime}}</p>#}
+{#<p>{{form.submit}}</p>#}
+{#</form>#}
+{% endblock %}

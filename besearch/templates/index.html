@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+<h1>Sign In</h1>
+
+<form method="post">
+    <p>
+        <label for="textfield">USERNAME:</label>
+        {{form.userName}}
+    </p>
+    <p>
+        <label for="password">PASSWORD:</label>
+        {{form.passWord}}
+    </p>
+    <p>
+        <label for="textfield2">CAPTCHA:</label>
+        {{form.captcha}}<a href=""><img src="/static/c.jpg" width="80" height="25" alt=""/></a>
+    </p>
+    <p>
+        {{form.submit}}
+    </p>
+    <p>
+        {{form.language}}
+     </p>
+</form>
+
+
+{% endblock %}

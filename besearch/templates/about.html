@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+<p>Use this area to provide additional information.</p>
+<form method="post">
+<p>{{form.building.label}}{{form.building}}</p>
+<p>{{form.weekTime.label}}{{form.weekTime}}</p>
+<p>{{form.dayTime.label}}{{form.dayTime}}</p>
+<p>{{form.submit}}</p>
+</form>
+{% endblock %}
